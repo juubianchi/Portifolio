@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6470b9bd49.js" crossorigin="anonymous"></script>
+    <style>
+    </style>
+</head>
+<body>
+<div id="header">
+    <div class="container"></div>
+    <nav>
+        
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre Mim</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Premiações</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p> Desenvolvedora de softwares em busca de desafios</p>
+        <h1> Portifólio em desenvolvimento!</h1>
+    </div>
+</div>
+<!-- ------------Sobre----------- -->  
+<div id="Sobre">
+    <div class="container">
+         <div class="row">
+            <div class="sobre-col-1">
+                <img src="images/fotopr2.jpg">
+            </div>  
+            <div class="sobre-col-2">
+                <h1 class="subtitulo"> Sobre Mim</h1>
+                <p>Aluna do terceiro ano do ensino médio no CETEC. Curso técnico em programação, astrônoma amadora, cientista cidadã reconhecida pela NASA, MCTI e IASC, astronauta análoga, multi medalhista em olimpíadas científicas, monitora voluntária e divulgadora científica.</p>
+                
+                <div class="tab-titulo">
+                    <p class="tab-links active-link" onclick="opentab('habilidades', event)">Habilidades</p>
+                    <p class="tab-links" onclick="opentab('experiencias', event)">Formação Acadêmica</p>
+                    <p class="tab-links" onclick="opentab('hobbies', event)">Hobbies</p>
+
+                </div>
+                <div class="tab-conteudos active-tab" id="habilidades">
+                    <ul> <!--habilidades--> 
+                        <li><span>UI/UX</span> <br> Web/mobile designer</li>
+                        <li><span>Cientista cidadã</span> <br>Astronôma amadora <br> Divulgadora científica </li>
+                        <li><span> Programadora </span><br> Python, HTML/CSS, Flutter, JS... </li>
+                    </ul>
+                </div>
+                <div class= "tab-conteudos" id="experiencias">
+                    <ul> <!--formação--> 
+                        <li><span> Formação Acadêmica</span><br> 2021-2023: Ensino médio completo - CETEC/UCS <br> 2019-2020: Ensino fundamental (8º - 9º ano) - Colégio La Salle Carmo <br> 2011-2018: Ensino fundamental (1º - 7º ano) - Colégio Mutirão </li>
+                        <li><span> Curso Técnico em Informática</span><br> Gestão de projetos, banco de dados, suporte e redes e programação</li>
+                        <li><span> Olimpiadas científicas</span><br> Participante e multimedalhista em olimpíadas científicas </li>
+                    </ul>
+                </div>
+                <div class="tab-conteudos" id="hobbies">
+                    <ul> <!--habilidades--> 
+                        <li><span>Dança</span> <br> Ballet clássico, Sapateado Americano, Jazz</li>
+                        <li><span> Música</span> <br> Violão, canto, teclado </li>
+                        <li><span> Mentoria</span> <br> professora voluntária </li>
+                    </ul>
+                </div>
+            </div>  
+         </div>
+    </div>
+</div>
+<!------------projetos------------->
+<div id="projetos">
+    <div class="container">
+        <h1 class="subtitulo"> Meus Projetos </h1>
+    <div class="lista-projetos">
+        <div>
+            <i class="fa-solid fa-satellite" style="color: #ffffff;"></i>
+            <h2> Nanosatélite Gralha-Azul </h2>
+            <p> Desenvolvimento de um CubeSat, para monitorar e mapear a Mata das Araucárias, bioma em risco de extinção no sul do Brasil. Com apenas 3% remanescente, sendo 0,2% protegido, a expansão urbana e agropecuária ameaça essa biodiversidade. O satélite, inspirado na ave gralha-azul, essencial para a disseminação das sementes de araucárias, visa estudar a vegetação e analisar níveis de gases poluentes durante sua missão. O objetivo é utilizar o sensoriamento remoto para preservar esse ecossistema.</p>
+            <a href="#">saiba mais</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-gamepad" style="color: #ffffff;"></i>
+            <h2> Jogos 2D </h2>
+            <p>Durante meu curso técnico, desenvolvi dois jogos: "Fox Adventures" e "Stellar Odyssey". Ambos jogos são 2D, com mecânicas similares, mas com histórias e objetivos diferentes.</p>
+            <a href="#">saiba mais</a>
+        </div> 
+        <div>
+            <i class="fa-solid fa-atom" style="color: #ffffff;"></i>
+            <h2> Clube Olímpico CETEC</h2>
+            <p> O Clube Olímpico, desenvolvido por mim, é destinado a alunos interessados em olimpíadas científicas regionais e internacionais. Com encontros periódicos, visa fornecer informações essenciais sobre datas, conteúdos e premiações. Além disso, busca facilitar a comunicação entre participantes, estimulando a formação de grupos de estudo e promovendo a interação entre estudantes com interesses similares</p>
+            <a href="#">saiba mais</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+            <h2> Presença Track </h2>
+            <p> O aplicativo utiliza OCR para registro mais rápido de presença e falta de alunos, permitindo a leitura de nomes, turmas e matérias a partir de imagens. Essa moderna oferece uma alternativa ágil ao método manual, otimizando o processo de monitoramento de presenças em instituições educacionais.</p>
+            <a href="#">saiba mais</a>
+        </div>
+
+    </div>
+    </div>
+</div>
+<!------------premiações------------->
+<div id="premiacoes">
+    <div class="container">
+        <h1 class="subtitulo"> Premiações </h1>
+        <div class="listapremiacoes">
+            <div class="premiacao">
+                <img src="images/obt.JPG">
+                <div class="layer">
+                    <h3> Olimpiada Brasileira de Tecnologia</h3>
+                    <p>Premiação em São José dos Campos, SP. Aplicativo para monitorar evasão escolar.</p>
+                    <a href="https://www.ucs.br/site/noticias/estudantes-do-cetec-participam-de-final-da-olimpiada-brasileira-de-tecnologia-em-sao-paulo/"> <i class="fa-solid fa-link" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <div class="premiacao">
+                <img src="images/embraer.JPG">
+                <div class="layer">
+                    <h3> Visita a Embraer. Premiação da Olimpiada Brasileira de Tecnologia</h3>
+                    <p>Premiação em São José dos Campos, SP. Aplicativo para monitorar evasão escolar.</p>
+                    <a href="https://www.ucs.br/site/noticias/estudantes-do-cetec-participam-de-final-da-olimpiada-brasileira-de-tecnologia-em-sao-paulo/"> <i class="fa-solid fa-link" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <div class="premiacao">
+                <img src="images/mobfog.JPG">
+                <div class="layer">
+                    <h3> Mostra Brasileira de Foguetes</h3>
+                    <p>Premiação em Barra do Piraí, RJ. Foguetes de propulsão hibrida de garrafa pet.</p>
+                    <a href="https://www.ucs.br/site/noticias/estudantes-do-cetec-conquistam-duas-medalhas-de-ouro-na-mostra-brasileira-de-foguetes/"> <i class="fa-solid fa-link" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Veja Mais></a>
+    </div>
+</div>
+
+
+ 
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabconteudos = document.getElementsByClassName("tab-conteudos");
+    
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabconteudo of tabconteudos) {
+                tabconteudo.classList.remove("active-tab");
+            }
+            var clickedTab = event.currentTarget;
+            clickedTab.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body> 
+<footer>
+        <p>&copy; 2023 Portifólio Web. Em desenvolvimento, volte mais tarde ;)</p>
+    </footer>
+</html>
