@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
     body {
-        background-color: #adbee2;
+        background-color: #3c4d7b;
         margin: 0;
         padding: 0;
     }
@@ -16,10 +16,8 @@
         height: 100vh;
         text-align: center;
         padding: 1em;
-        background-image: url(images/teste3.png);
-        background-repeat: no-repeat; 
-        
-    
+        background-image: url(images/fundo.jpg);
+        background-size: cover; /* Adicionando esta linha para cobrir toda a área */
     }
     
     .container {
@@ -46,22 +44,27 @@
         color: white;
         text-decoration: none;
         font-size: 20px;
-        background-color: #8aa7e5;
+        background-color: #5b86e5;
         border-bottom: 10;
         border-radius: 20px; /* Adicionando esta linha para deixar os botões redondos */
         padding: 10px 15px;
+    
         
     }
     nav ul li a::after{
         content: '';
-        width: 0;    
+        width: 0;
         height: 3px;
-        background: #5b86e5;
+        background: #ff75aa;
         position: absolute;
         left: 0;
-        bottom: -6px; 
-        transition: 0.5s;
-
+        bottom: -5px;
+        transition: 0.5s;   
+    }
+    nav ul li a:hover{
+            background:  #fc82b1;
+            transform: translateY(-10px);
+            transition: 0.2s;
     }
     nav ul li a:hover::after{
         width: 100%;    
@@ -84,7 +87,7 @@
         width: 100%;
     }
     .header-text{
-        margin-top:15%;
+        margin-top:8%;
         font-size: 30px
     }
  /* ------------Sobre------------ */
@@ -131,7 +134,7 @@
     content: '';
     width: 0;
     height: 3px;
-    background: #0762a7;
+    background: #ff75aa;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -148,7 +151,7 @@
 
 }
 .tab-conteudos ul li span{
-    color: #035a9c;
+    color: #b7ccff;
     font-size: 16px;
 }
 .tab-conteudos{
@@ -168,7 +171,7 @@
     margin-top: 50px;
 }
 .lista-projetos div{
-    background: #8aa7e5;
+    background: #5cadec;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -187,13 +190,13 @@
 }
 .lista-projetos div a{
     text-decoration:underline;
-    color: #1d1970;
+    color: #ffffff;
     font-size: 12px;
     margin-top:20px;
     display: inline-block;
 }
 .lista-projetos div:hover{
-    background: #0a6db9;
+    background:  #fc82b1;
     transform: translateY(-10px);
 }
 /*------------premiações------------->*/
@@ -220,7 +223,7 @@
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.285), #035a9c);
+    background: linear-gradient(#ff75aa8d, #5cadec);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -245,7 +248,7 @@
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #adbee2;
+    background: #0a6db9;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -262,7 +265,7 @@
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #035a9c;
+    border: 1px solid #0a6db9;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -270,9 +273,29 @@
     transition: background 0.5s;
 }
 .btn:hover{
-    background-color: #0762a7;
+    background-color: #0a6db9;
 }
+/*contato*/
 
+.contato-left{
+flex-basis: 35%;
+}
+.contato-right{
+    flex-basis: 60%;
+    }
+.contato-left p{
+    margin-top: 30px;  
+}
+.social-icones{
+    margin-top: 30px;
+}
+.social-icones a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#0a6db9;
+    display: inline-block;
+}
 
 
 
