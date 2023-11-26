@@ -1,6 +1,7 @@
 *{
-    margin:0;
-    padding:0;
+   
+    margin: 0;
+    padding: 0;
     font-family:'Poopins', sans-serif;
     box-sizing: border-box;
 }
@@ -17,24 +18,22 @@
         text-align: center;
         padding: 1em;
         background-image: url(images/fundo.jpg);
-        background-size: cover; /* Adicionando esta linha para cobrir toda a área */
+        background-size: cover; 
     }
     
     .container {
-        padding: 5px 10%;
+        padding: 5px 8%;
         color:white;
-
-
-    }
+      }
     nav{
         align-items: center;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        
-         
+    
     }
     nav ul li{
+        
         display: inline-block;
         list-style: none;
         margin: 50px 20px;
@@ -55,26 +54,20 @@
         content: '';
         width: 0;
         height: 3px;
-        background: #ff75aa;
+        background: #FFB521;
         position: absolute;
         left: 0;
         bottom: -5px;
         transition: 0.5s;   
     }
     nav ul li a:hover{
-            background:  #fc82b1;
+            background:  #FFB521;
             transform: translateY(-10px);
             transition: 0.2s;
     }
     nav ul li a:hover::after{
         width: 100%;    
     }
-    /*@media screen and (max-width: 768px) {
-        nav ul {
-            flex-direction: column;
-            align-items: center;
-    }
-}*/
 
    
     footer {
@@ -134,7 +127,7 @@
     content: '';
     width: 0;
     height: 3px;
-    background: #ff75aa;
+    background: #FFB521;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -196,7 +189,7 @@
     display: inline-block;
 }
 .lista-projetos div:hover{
-    background:  #fc82b1;
+    background:  #FFB521;
     transform: translateY(-10px);
 }
 /*------------premiações------------->*/
@@ -223,7 +216,7 @@
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(#ff75aa8d, #5cadec);
+    background: linear-gradient(#ffdc2e8d, #5cadec);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -265,7 +258,7 @@
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #0a6db9;
+    background-color: #5cadec;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -273,7 +266,7 @@
     transition: background 0.5s;
 }
 .btn:hover{
-    background-color: #0a6db9;
+    background-color: #FFB521;
 }
 /*contato*/
 
@@ -295,52 +288,82 @@ flex-basis: 35%;
     margin-right: 15px;
     color:#0a6db9;
     display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icones a:hover{
+    color:#FFB521;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #5cadec;
+    
+}
+.contato-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    color: white;
+    background: #5cadec;
+    padding: 15px;
+    margin: 15px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*-----------css for smal screens-------------*/
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+        background-image: url(images/fundo.jpg);
+        background-size: cover;
+        
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #5b86e5;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
 }
 
 
 
-
-
-
-
-
-
-
-
-
-   /* section {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-    }
-
-    footer {
-        background-color: rgb(75, 75, 255);
-        color: #fff;
-        text-align: center;
-        padding: 1em;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .buttons {
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .buttons button {
-        padding: 10px;
-        margin: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        background-color: rgb(72, 72, 255);
-        color: #f4f4f4;
-    }
-
-    .buttons button:hover {
-        background-color: rgb(118, 118, 228);
-        color: rgb(255, 255, 255);
-    }

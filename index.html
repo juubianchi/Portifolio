@@ -13,14 +13,15 @@
 <div id="header">
     <div class="container"></div>
     <nav>
-        
-        <ul>
+        <ul id="menulateral">
             <li><a href="#">Home</a></li>
             <li><a href="#">Sobre Mim</a></li>
             <li><a href="#">Projetos</a></li>
             <li><a href="#">Premiações</a></li>
             <li><a href="#">Contato</a></li>
+            <i class="fas fa-regular fa-circle-xmark" style="color: #f0f0f0;" on click="fecharmenu()"></i>
         </ul>
+        <i class="fas fa-solid fa-bars" style="color: #ffffff;" onclick="abrirmenu()"></i>
     </nav>
     <div class="header-text">
         <p> Desenvolvedora de softwares em busca de desafios</p>
@@ -153,10 +154,9 @@
                 <form >
                     <input type="text" name="Name" placeholder="Seu Nome" required>
                     <input type="email" name="Email" placeholder="Seu Email" required>
-                    <textarea name="Mensagem" rows="6" placeholder="Sua Mensagem"> </textarea>
-                    <button type="submit"> Enviar </button>
+                    <textarea name="Mensage" rows="6" placeholder= "Sua Mensagem"></textarea> 
+                    <button type="submit" class="btn btn2"> Enviar </button>
                 </form>
-
             </div>
         </div>
     </div>
@@ -180,8 +180,14 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+    <script>
+        var fmenulateral = document.getElementById("menulateral");
+
+        function abrirmenu(){
+            fmenulateral.style.right = "0";
+        }
+        function fecharmenu(){
+            fmenulateral.style.right = "-200px";
+        }
+    </script>
 </body> 
-<!--<footer>
-        <p>&copy; 2023 Portifólio Web. Em desenvolvimento, volte mais tarde ;)</p>
-    </footer>
-</html> -->
