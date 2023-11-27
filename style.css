@@ -17,8 +17,10 @@
         height: 100vh;
         text-align: center;
         padding: 1em;
-        background-image: url(images/fundo.jpg);
-        background-size: cover; 
+        background-image: url(images/fundo3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       
     }
     
     .container {
@@ -83,6 +85,8 @@
         margin-top:8%;
         font-size: 30px
     }
+   
+    
  /* ------------Sobre------------ */
 #Sobre{
     padding: 60px 0;
@@ -326,17 +330,15 @@ nav .fas{
 }
 
 @media only screen and (max-width: 600px){
+    #header{
+        background-image: none;           
+    }
     
     .header-text{
         margin-top: 100%;
         font-size: 16px;
-        background-image: url(images/fundo.jpg);
-        background-size: cover;
-        
     }
-    .header-text h1{
-        font-size: 30px;
-    }
+
     nav .fas{
         display: block;
         font-size: 25px;
@@ -350,6 +352,7 @@ nav .fas{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: right 0.5s;
     }
 
     nav ul li{
@@ -362,8 +365,22 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
+    .subtitulo{
+        font-size: 40px;
 
+    }
+    .sobre-col-1,.sobre-col-2{
+        flex-basis: 100%;
+    }
+    .sobre-col-1{
+        margin-bottom: 30px;
+    }
+    .sobre-col-2{
+    font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
 }
-
-
 
